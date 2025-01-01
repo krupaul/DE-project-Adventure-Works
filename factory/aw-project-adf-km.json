@@ -1,0 +1,9 @@
+{
+	"name": "aw-project-adf-km",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c866ba23-0891-47a8-a43b-9b8ffbfe78b8",
+		"tenantId": "03c6391a-f2d4-4957-b2e7-85cd062d0ef1"
+	}
+}

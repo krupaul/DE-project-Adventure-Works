@@ -1,0 +1,53 @@
+{
+	"name": "pl_GitToSilver",
+	"properties": {
+		"activities": [
+			{
+				"name": "BronzeToSilver",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "pl_GitToBronze",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/cbu21hmz@cbu.ca/AW_Project/silver_layer 2024-11-30 06:39:33"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_fromBronze",
+					"type": "LinkedServiceReference"
+				}
+			},
+			{
+				"name": "pl_GitToBronze",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_GitToBronze",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2024-12-12T23:42:06Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
