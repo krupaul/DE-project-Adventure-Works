@@ -62,4 +62,4 @@
 - Leveraged the **Medallion Architecture** for high-quality data transformation and reporting.
 
 ## Data Sources:
-- [Original Dataset on Kaggle](https://www.kaggle.com/datasets/ukvet](https://www.kaggle.com/datasets/ukveteran/adventure-works)
+- [Original Dataset on Kaggle](https://www.kaggle.com/datasets/ukveteran/adventure-works)
