@@ -1,0 +1,17 @@
+{
+	"name": "Create schema",
+	"properties": {
+		"content": {
+			"query": "SELECT *\nFROM OPENROWSET(\n    BULK 'https://awprojectadlsgen2.blob.core.windows.net/silver/AdventureWorks_Calendar',\n    FORMAT = 'PARQUET'\n) as query1\n\n\nCREATE SCHEMA gold  ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "awdb",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
