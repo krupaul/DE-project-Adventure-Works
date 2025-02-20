@@ -1,5 +1,9 @@
 # Azure Data Engineering Project: End-to-End Data Transformation with Medallion Architecture
 
+## Architecture Overview
+
+![architectureAW](https://github.com/user-attachments/assets/4cc6be2a-1ca6-481c-ae14-394b54772a01)
+
 ## Project Overview
 - Implemented an end-to-end data pipeline using **Azure Data Factory (ADF)**, **Azure Databricks**, **Azure Synapse Analytics**, and **Azure Data Lake Gen2**.
 - Utilized **Medallion Architecture** (Bronze, Silver, Gold) to structure the data pipeline and ensure incremental data processing and high-quality output.
@@ -12,10 +16,6 @@
 - **Microsoft Entra ID**
 - **Python**
 - **SQL**
-
-## Architecture Overview
-
-![architectureAW](https://github.com/user-attachments/assets/4cc6be2a-1ca6-481c-ae14-394b54772a01)
 
 
 - **Bronze Layer**: Raw data ingestion.
